@@ -1,0 +1,9 @@
+C:\Users\user\source\repos\AuthTutorial\AuthTutorial.Auth.Common\bin\Debug\netcoreapp3.1\AuthTutorial.Auth.Common.deps.json
+C:\Users\user\source\repos\AuthTutorial\AuthTutorial.Auth.Common\bin\Debug\netcoreapp3.1\AuthTutorial.Auth.Common.dll
+C:\Users\user\source\repos\AuthTutorial\AuthTutorial.Auth.Common\bin\Debug\netcoreapp3.1\AuthTutorial.Auth.Common.pdb
+C:\Users\user\source\repos\AuthTutorial\AuthTutorial.Auth.Common\obj\Debug\netcoreapp3.1\AuthTutorial.Auth.Common.csprojAssemblyReference.cache
+C:\Users\user\source\repos\AuthTutorial\AuthTutorial.Auth.Common\obj\Debug\netcoreapp3.1\AuthTutorial.Auth.Common.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\AuthTutorial\AuthTutorial.Auth.Common\obj\Debug\netcoreapp3.1\AuthTutorial.Auth.Common.AssemblyInfo.cs
+C:\Users\user\source\repos\AuthTutorial\AuthTutorial.Auth.Common\obj\Debug\netcoreapp3.1\AuthTutorial.Auth.Common.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\AuthTutorial\AuthTutorial.Auth.Common\obj\Debug\netcoreapp3.1\AuthTutorial.Auth.Common.dll
+C:\Users\user\source\repos\AuthTutorial\AuthTutorial.Auth.Common\obj\Debug\netcoreapp3.1\AuthTutorial.Auth.Common.pdb
