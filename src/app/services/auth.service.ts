@@ -35,7 +35,6 @@ export class AuthService {
   isAuthenticated(): boolean {
     var token = localStorage.getItem(ACCESS_TOKEN_KEY);
     return token && !this.jwtHelper.isTokenExpired(token);
-
   }
 
   logout(): void {
