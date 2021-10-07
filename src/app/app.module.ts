@@ -6,7 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './components/home/home.component';
 import { OrdersComponent } from './components/orders/orders.component';
 import { AppRoutingModule } from './app-routing.module';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AUTH_API_URL, STORE_API_URL } from './app-injection-tokens';
 import { environment } from 'src/environments/environment';
 import { JwtHelperService, JwtModule } from '@auth0/angular-jwt';
@@ -18,6 +18,7 @@ import { MatTableModule } from '@angular/material/table';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
+import { AuthInterceptor } from './interceptors/auth.interceptor';
 
 
 export function tokenGetter(){
@@ -35,7 +36,7 @@ export function tokenGetter(){
     JwtModule.forRoot({
       config: {
         tokenGetter,
-        allowedDomains: environment.tokenWhiteListedDomains
+        allowedDomains: environment.tokenWhiteListedDomains,
       },
     }),
     MatCardModule,
@@ -43,7 +44,7 @@ export function tokenGetter(){
     MatButtonModule,
     MatTableModule,
     MatFormFieldModule,
-    FormsModule
+    FormsModule,
   ],
   providers: [
     {
@@ -53,6 +54,11 @@ export function tokenGetter(){
     {
       provide: STORE_API_URL,
       useValue: environment.storeApi,
+    },
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: AuthInterceptor,
+      multi: true,
     },
   ],
   bootstrap: [AppComponent],
